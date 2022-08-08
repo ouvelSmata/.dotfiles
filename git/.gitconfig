@@ -1,0 +1,38 @@
+[user]
+	name = Ouvel Smata
+	email = ouvelsmata@gmail.com
+[core]
+	editor = nvim
+[difftool]
+	prompt = true
+[diff]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE
+[safe]
+	directory = /storage/emulated/0/BelajarJava/maven/belajar-java-thread
+	directory = /storage/emulated/0/BelajarJava/maven/belajar-java-stream
+	directory = /storage/emulated/0/Documents/Griya Anugrah/Rekap
+	directory = /storage/emulated/0/BelajarJava/maven/belajar-java-reflection
+	directory = /storage/emulated/0/BelajarJava/maven/belajar-java-database
+[alias]
+	cg = config --global
+	ko = commit -m
+	koma = commit --amend -m
+	clso = config --list --show-origin
+	lo = log --oneline
+	logp = log --oneline --graph
+  bl = branch --list
+  bc = checkout
+  bs = switch
+  bsc = branch --show-current
+  bd = branch --delete
+  br = branch
+  sp = stash push -m
+  sl = stash list
+  sc = stash clear
+  sd = stash drop
+  sa = stash apply
+	logone = log --oneline
+[init]
+	defaultBranch = main
