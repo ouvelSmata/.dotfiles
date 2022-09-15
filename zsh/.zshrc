@@ -113,14 +113,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=/home/ubuntu/.cargo/bin:$PATH
-export CARGO_HOME=/home/ubuntu/.cargo
+##export PATH=/home/ubuntu/.cargo/bin:$PATH
+## export CARGO_HOME=/home/ubuntu/.cargo
 
 export PATH=/home/ubuntu/.local/bin:$PATH
 export LOCAL_HOME=/home/ubuntu/.local
 
-export PATH=/opt/graalvm-ce-java17-22.1.0/bin:$PATH
-export JAVA_HOME=/opt/graalvm-ce-java17-22.1.0
+## export PATH=/opt/graalvm-ce-java17-22.1.0/bin:$PATH
+## export JAVA_HOME=/opt/graalvm-ce-java17-22.1.0
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
