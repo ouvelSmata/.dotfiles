@@ -116,8 +116,8 @@ export NVM_DIR="$HOME/.nvm"
 ##export PATH=/home/ubuntu/.cargo/bin:$PATH
 ## export CARGO_HOME=/home/ubuntu/.cargo
 
-export PATH=/home/ubuntu/.local/bin:$PATH
-export LOCAL_HOME=/home/ubuntu/.local
+# export PATH=/home/ubuntu/.local/bin:$PATH
+# export LOCAL_HOME=/home/ubuntu/.local
 
 ## export PATH=/opt/graalvm-ce-java17-22.1.0/bin:$PATH
 ## export JAVA_HOME=/opt/graalvm-ce-java17-22.1.0
@@ -130,3 +130,8 @@ export PATH=/opt/apache-maven-3.8.6/bin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+alias luamake=/home/kimha/lua-language-server/3rd/luamake/luamake
+
+export PATH=/home/kimha/lua-language-server/bin:$PATH
+
+export PATH=$PATH:/opt/gradle/gradle-7.5.1/bin
