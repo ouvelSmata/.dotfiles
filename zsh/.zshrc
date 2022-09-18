@@ -105,6 +105,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+source "$HOME/.cargo/env"
+
 alias e=exit
 alias v=nvim
 alias t=tmux
@@ -135,3 +137,4 @@ alias luamake=/home/kimha/lua-language-server/3rd/luamake/luamake
 export PATH=/home/kimha/lua-language-server/bin:$PATH
 
 export PATH=$PATH:/opt/gradle/gradle-7.5.1/bin
+export PATH=/opt/maven/apache-maven-3.8.6/bin:$PATH
