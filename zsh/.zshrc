@@ -110,6 +110,7 @@ source "$HOME/.cargo/env"
 alias e=exit
 alias v=nvim
 alias t=tmux
+alias python=python3
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -138,3 +139,4 @@ export PATH=/home/kimha/lua-language-server/bin:$PATH
 
 export PATH=$PATH:/opt/gradle/gradle-7.5.1/bin
 export PATH=/opt/maven/apache-maven-3.8.6/bin:$PATH
+export PATH=$PATH:/home/kimha/.local/bin
