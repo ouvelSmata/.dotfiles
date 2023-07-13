@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source "$HOME/.cargo/env"
+#source "$HOME/.cargo/env"
 
 alias e=exit
 alias v=nvim
@@ -122,21 +122,25 @@ export NVM_DIR="$HOME/.nvm"
 # export PATH=/home/ubuntu/.local/bin:$PATH
 # export LOCAL_HOME=/home/ubuntu/.local
 
-## export PATH=/opt/graalvm-ce-java17-22.1.0/bin:$PATH
-## export JAVA_HOME=/opt/graalvm-ce-java17-22.1.0
+export PATH=/opt/graalvm-ce-java19-22.3.1/bin:$PATH
+export JAVA_HOME=/opt/graalvm-ce-java19-22.3.1
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export PATH=/opt/apache-maven-3.8.6/bin:$PATH
+export PATH=/opt/apache-maven-3.9.1/bin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-alias luamake=/home/kimha/lua-language-server/3rd/luamake/luamake
+#alias luamake=/home/kimha/lua-language-server/3rd/luamake/luamake
 
-export PATH=/home/kimha/lua-language-server/bin:$PATH
+#export PATH=/home/kimha/lua-language-server/bin:$PATH
 
-export PATH=$PATH:/opt/gradle/gradle-7.5.1/bin
-export PATH=/opt/maven/apache-maven-3.8.6/bin:$PATH
+# export PATH=$PATH:/opt/gradle/gradle-7.5.1/bin
 export PATH=$PATH:/home/kimha/.local/bin
+export PATH=$PATH:/opt/lua/bin
+export PATH=$PATH:/opt/lemminx
+export PATH=$PATH:/opt/golang/go/bin
+#source ~/home/kimha/.sdkman/bin/sdkman-init.sh
+#source /home/kimha/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
