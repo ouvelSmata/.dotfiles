@@ -73,7 +73,7 @@ ZSH_THEME="nebirhos"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git emotty)
+plugins=(git emotty brew mvn gradle sdk pip npm nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,42 +105,21 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-#source "$HOME/.cargo/env"
-
 alias e=exit
 alias v=nvim
 alias t=tmux
 alias python=python3
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-##export PATH=/home/ubuntu/.cargo/bin:$PATH
-## export CARGO_HOME=/home/ubuntu/.cargo
-
-# export PATH=/home/ubuntu/.local/bin:$PATH
-# export LOCAL_HOME=/home/ubuntu/.local
-
-export PATH=/opt/graalvm-ce-java19-22.3.1/bin:$PATH
-export JAVA_HOME=/opt/graalvm-ce-java19-22.3.1
+alias sr="sudo reboot"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export PATH=/opt/apache-maven-3.9.1/bin:$PATH
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-#alias luamake=/home/kimha/lua-language-server/3rd/luamake/luamake
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-#export PATH=/home/kimha/lua-language-server/bin:$PATH
-
-# export PATH=$PATH:/opt/gradle/gradle-7.5.1/bin
-export PATH=$PATH:/home/kimha/.local/bin
-export PATH=$PATH:/opt/lua/bin
-export PATH=$PATH:/opt/lemminx
-export PATH=$PATH:/opt/golang/go/bin
-#source ~/home/kimha/.sdkman/bin/sdkman-init.sh
-#source /home/kimha/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+PATH=$PATH:/home/kimha/Build/lemminx
+export PATH="/home/linuxbrew/.linuxbrew/opt/postgresql@15/bin:$PATH"
