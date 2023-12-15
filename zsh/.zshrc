@@ -104,8 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/linuxbrew/.linuxbrew/opt/zsh-git-prompt/zshrc.sh
-# source /home/linuxbrew/.linuxbrew/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 alias e=exit
 alias v=nvim
@@ -113,23 +111,3 @@ alias t=tmux
 alias python=python3
 alias sr="sudo reboot"
 alias ls=lsd
-
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-    autoload -Uz compinit
-    compinit
-  fi
-export PATH="/home/linuxbrew/.linuxbrew/opt/postgresql@16/bin:$PATH"
-export PATH="/home/kimha/.cargo/bin:$PATH"
